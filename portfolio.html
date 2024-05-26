@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/99580f613f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+</head>
+<body>
+    <header >
+    <nav>
+      <div class="nav-links" id="nav_Links">
+        <ul>
+          <li><a href="#nav_Links">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills" id="skl">SKILLS</a></li>
+          <script src="skills.js"></script>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT ME</a></li>
+          <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter fa-2x" id="twitter"></i></a>
+          <a href="https://github.com/fares-ben-othman" target="_blank"><i class="fa-brands fa-github fa-2x" id="github"></i></a>
+          <a href="https://www.linkedin.com/in/ibn-othmen-fares-1222032b0/" target="_blank"><i class="fa-brands fa-linkedin fa-2x" id="linkedin"></i></a>
+          <a href="https://www.facebook.com/fares.h2016" target="_blank"><i class="fa-brands fa-facebook fa-2x" id="facebook"></i></a>
+         <div class="moon"><a><img src="moon2.png" id="icon"></a></div>
+          
+        </ul>
+      </div> 
+      
+      </nav>
+    </br>
+    </header>
+<section classe="home" id="home">
+        <div class="home-content">
+            
+            <H3>Hello , it's me </H3> 
+            <h1>Fares Ibn Othmen</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p> at the National School of Engineers of Sousse </p>
+           <button class="hero-btn" ><a href="mon-cv.pdf" id="bouton" download="fares-ben-othman" target="_blank"> Download CV </a></button>
+              <a href="#contact"><button class="hero-btn" > Hire Now </button></a> 
+            <img id="qr-code" src="mon_cv_pro-removebg-preview.png">
+            <h4> scan this QR-code</h4>  
+        </div>
+         <div class="my-photo"><img src="costume1.png" id="me"  > </div>
+    </section>
+    <script src="engeneering student.js"></script>
+    <script>
+    var icon =document.getElementById("icon");
+    icon.onclick= function(){
+      document.body.classList.toggle("dark-theme");
+      if(document.body.classList.contains("dark-theme")){
+        icon.src="sun2.jpg";}
+      else{
+        icon.src="moon2.png";
+      }}
+    
+    </script>
+<section class="ABOUT" id="about">
+  <div class="about-me">
+    <h4> get to know more</h4>
+    <h2>About me</h2>
+</div>
+ <div class="my-description">
+  <img src="round-me.png" id="round-me">
+  <div class="experience">
+    <div class="layer1">
+      <i class="fa-solid fa-medal fa-2x" id="medal"></i><br>
+     <h5> +1 years of  </h5><br>
+     <h5> frontend developement </h5>
+    </div>
+    
+
+  </div>
+  <div class="education">
+    <div class="layer1"><i class="fa-solid fa-graduation-cap fa-2x" id="graduation"></i>
+    <h5>maths degree</h5><br>
+    <h5> prep engeneering degree </h5>
+</div>
+    
+  </div>
+  <div class="introduction">
+    <p> &#160 &#160 &#160 &#160  Hi, I'm Fares, an engineering student specializing in frontend development. Passionate about crafting user-friendly interfaces, I delve into HTML, CSS, and JavaScript to create seamless web experiences. Balancing creativity with technical precision, I'm on a mission to blend design and functionality. Join me on this journey as I explore the dynamic world of frontend development, aiming to bring innovation to digital experiences.</p>
+  </div>
+ </div>
+</section>
+
+
+<section class="my SKILLS" id="skills">
+   <h2 class="skill"> My Skills</h2>
+
+
+  <div class="container1 ">
+    <div class="progress" style="--i:85;--clr:#43f94a;">
+      <h3><div id="number1" ></div></h3>
+      <h4>html</h4>
+    </div>
+    <div class="progress" style="--i:60;--clr:#3fd6f4;">
+     <h3><div id="number2"></div></h3>
+     <h4>css</h4>
+   </div>
+   <div class="progress" style="--i:50;--clr:#8e08f5;">
+     <h3> <div id="number3"></div></h3>
+     <h4>JavaScript</h4>
+   </div>
+   <div class="progress" style="--i:75;--clr:#f9f50b;">
+    <h3> <div id="number4"></div></h3>
+     <h4>python</h4>
+   </div>
+  </div>
+  <div class="container2 ">
+    <div class="progress" style="--i:70;--clr:#4943f9;">
+      <h3> <div id="number5"></div></h3>
+      <h4>my Sql</h4>
+    </div>
+    <div class="progress" style="--i:60;--clr:#f43fbe;">
+      <h3> <div id="number6"></div></h3>
+     <h4>Php</h4>
+   </div>
+   <div class="progress" style="--i:50;--clr:#f50837;">
+    <h3> <div id="number7"></div></h3>
+     <h4>Java</h4>
+   </div>
+   <div class="progress" style="--i:80;--clr:#f27c06;">
+    <h3> <div id="number8"></div></h3>
+     <h4>C</h4>
+   </div>
+  </div>
+</section>
+<script src="my skills.js"></script>
+<section class="my PROJECTS" id="projects">
+ <h2 class="my-projects"> My Projects</h2><br>
+ <div class="work-list">
+     <div class="work"> 
+      <img src="bank.jpg" width="250px" height="400px">
+      <div class="layer">
+        <h3> bank management app</h3>
+        <p> this is a bank management app that i made using C</p>
+        <a href="https://github.com/fares-ben-othman/Bank-Management-System" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+     </div>
+     <div class="work"> 
+      <img src="eniso.jpg" width="250px" height="400px">
+      <div class="layer">
+        <h3> eniso website</h3>
+        <p> this is the web site of eniso that i made </p>
+        <a href="https://github.com/fares-ben-othman/Eniso-Web-Site" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+     </div>
+     <div class="work"> 
+      <img src="Portfolio1.png" width="250px" height="400px">
+      <div class="layer">
+        <h3> my portfolio</h3>
+        <p> this is my portfolio</p>
+        <a href="https://github.com/fares-ben-othman/My-Portfolio" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+     </div>
+ </div>
+ <button class="hero-btn" id="buton-99"> see more</button>
+</section>
+<section class="contact-me" id="contact">
+  <h2> Contact me </h2>
+  <div class="row">
+    <div class="contact-col">
+      <div>
+        <i class="fa-solid fa-phone"></i>
+        <span>
+          <h5 class="hehe">+21625173033</h5>
+          <p class="p5"> You can call me </p>
+        </span>
+        
+      </div>
+      <div>
+        <i class="fa-solid fa-envelope"></i>
+        <span>
+          <h5 class="hehe">benothmanfares0@gmail.com</h5>
+          <p class="p5"> You can email me </p>
+        </span>
+  
+      </div>
+    </div>
+    <div class="contact-col">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="02fad741-f286-448c-ac64-cf60082989e0">
+        <input type="text" name="name"placeholder="Enter your Name" classe="contact-inputs" required>
+        <input type="email" name="email"  placeholder="Enter email address" classe="contact-inputs" required>
+        <textarea rows="8"  name="message" placeholder="message" classe="contact-inputs" required></textarea>
+        <button type="submit" class="hero-btn" id="last-but">send message</button>
+      </form>
+    </div>
+   </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
